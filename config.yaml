@@ -1,0 +1,21 @@
+dataset:
+  file: dataset.csv
+  target_var: SK4067
+flags:
+  rnn_flag: 1
+global:
+  plotsize: 500
+  random_seed: 42
+model:
+  forecast_horizon: 50
+  look_back: 100
+  n_epochs: 2
+  n_neurons: 50
+paths:
+  forecasts: output
+  gpr: gpr
+  logs: logs
+  processed: data/processed
+  raw: data/raw
+test:
+  interval_epochs: 1
